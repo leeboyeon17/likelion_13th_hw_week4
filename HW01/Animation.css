@@ -1,0 +1,54 @@
+@keyframes rotate {
+    0% {transform: rotate(0deg); }
+    100% {transform: rotate(360deg); }
+}
+
+@keyframes translate {
+    0% {transform: translateX(-100px); }
+    50% {transform: translateY(-100px); }
+    
+}
+
+@keyframes shadow {
+    50% {box-shadow: inset 0 0 50px rgb(255, 59, 219); }
+}
+
+@keyframes shake {
+    0% {transform: translateX(0); }
+    25% {transform: translateX(-5px); }
+    50% {transform: translateX(5px); }
+    75% {transform: translateX(-5px); }
+    100% {transform: translateX(0); }
+}
+
+@keyframes hover {
+    80% {background: beige;
+        transform: scale(1.1);
+    }
+}
+
+.box:nth-child(2) {
+    background: rgb(99, 147, 252);
+    animation: translate 1s linear 3;
+    animation-fill-mode: both;
+}
+
+/*.box:nth-child(1) {
+    animation: hover 5s ease-in-out forwards;
+}
+
+.box:nth-child(1) {
+    animation: rotate 1s linear infinite;
+    animation-iteration-count: 2;
+}
+
+.box:nth-child(3) {
+    animation: shadow 2s linear infinite;
+}
+
+.box:nth-child(4) {
+    background: tomato;
+    animation: shake 0.5s ease infinite;
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+}*/
